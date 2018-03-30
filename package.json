@@ -21,15 +21,16 @@
     "useTabs": false
   },
   "dependencies": {
+    "babylon": "^6.18.0",
+    "babylon-walk": "^1.0.2",
     "classnames": "^2.2.5",
     "copy-to-clipboard": "^3.0.8",
+    "lodash": "^4.17.4",
     "preact": "^8.2.5",
     "prop-types": "^15.5.10",
+    "pw-app-sdk": "^0.2.5",
     "react-copy-to-clipboard": "^5.0.0",
     "react-dom": "^15.6.1",
-    "babylon-walk": "^1.0.2",
-    "babylon": "^6.18.0",
-    "lodash": "^4.17.4",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "whatwg-fetch": "2.0.3"
@@ -101,7 +102,8 @@
     "watch": "nodemon -w src/ -e css -x 'npm run styles'",
     "lib": "rm -rf dist; npm run styles; NODE_ENV=production babel src/core --out-dir dist --copy-files --ignore '__tests__'",
     "deploy": "npm run build && s3_website push",
-    "prepare": "npm run lib"
+    "prepare": "npm run lib",
+    "publish": "npm run build && cd build && git init && git checkout -b gh-pages && git add . && git commit -m 'publish to gh pages' && git push git@github.com:guangda-prosperworks/jsconsole.git gh-pages --force"
   },
   "main": "dist/index.js",
   "files": [

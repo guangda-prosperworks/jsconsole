@@ -73,12 +73,8 @@ class App extends Component {
   componentDidMount() {
     createContainer();
     bindConsole(this.console);
-    const query = decodeURIComponent(window.location.search.substr(1));
-    if (query) {
-      this.onRun(query);
-    } else {
-      this.onRun(':welcome');
-    }
+    this.onRun(':welcome');
+    this.onRun(':load pwsdk');
   }
 
   triggerFocus(e) {

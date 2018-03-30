@@ -37,6 +37,7 @@ export function createContainer() {
   container.style.position = 'absolute';
   container.style.top = '-100px';
   container.setAttribute('name', '<proxy>');
+  container.src = `about:blank${window.location.search}`;
   document.body.appendChild(container);
   setContainer(container);
 }

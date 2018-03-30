@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import PWSDK from 'pw-app-sdk';
 import store from './core/store';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 import './core/jsconsole.css';
 
 const rootEl = document.getElementById('root');
+const sdk = PWSDK.init();
+sdk.setAppUI({height: 600, disableAddButton: true});
 
 // Create a reusable render method that we can call more than once
 let render = () => {
