@@ -9,7 +9,13 @@ import './core/jsconsole.css';
 
 const rootEl = document.getElementById('root');
 const sdk = PWSDK.init();
-sdk.setAppUI({height: 600, disableAddButton: true});
+sdk.setAppUI({height: 600});
+sdk.on('addButtonClicked', () => {
+  sdk.showModal({
+    height: 600,
+    displayHeader: true,
+  });
+});
 
 // Create a reusable render method that we can call more than once
 let render = () => {
