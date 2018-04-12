@@ -28,7 +28,7 @@
     "lodash": "^4.17.4",
     "preact": "^8.2.5",
     "prop-types": "^15.5.10",
-    "pw-app-sdk": "^0.2.5",
+    "pw-app-sdk": "^0.3.0",
     "react-copy-to-clipboard": "^5.0.0",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
