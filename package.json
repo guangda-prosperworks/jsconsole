@@ -103,7 +103,7 @@
     "lib": "rm -rf dist; npm run styles; NODE_ENV=production babel src/core --out-dir dist --copy-files --ignore '__tests__'",
     "deploy": "npm run build && s3_website push",
     "prepare": "npm run lib",
-    "publish": "npm run build && cd build && git init && git checkout -b gh-pages && git add . && git commit -m 'publish to gh pages' && git push git@github.com:guangda-prosperworks/jsconsole.git gh-pages --force"
+    "deploy": "npm run build && cd build && git init && git checkout -b gh-pages && git add . && git commit -m 'publish to gh pages' && git push git@github.com:guangda-prosperworks/jsconsole.git gh-pages --force"
   },
   "main": "dist/index.js",
   "files": [
