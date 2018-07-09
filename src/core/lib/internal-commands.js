@@ -35,7 +35,7 @@ const about = () => ({
 });
 
 const libs = {
-  pwsdk: 'https://cdn.jsdelivr.net/npm/pw-app-sdk@latest/dist/pwsdk.min.js',
+  copper: 'https://cdn.jsdelivr.net/npm/copper-sdk@latest/dist/copper-sdk.min.js',
   jquery: 'https://code.jquery.com/jquery.min.js',
   underscore: 'https://cdn.jsdelivr.net/underscorejs/latest/underscore-min.js',
   lodash: 'https://cdn.jsdelivr.net/lodash/latest/lodash.min.js',

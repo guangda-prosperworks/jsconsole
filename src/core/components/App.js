@@ -74,7 +74,7 @@ class App extends Component {
     createContainer();
     bindConsole(this.console);
     this.onRun(':welcome');
-    this.onRun(':load pwsdk');
+    this.onRun(':load copper');
   }
 
   triggerFocus(e) {

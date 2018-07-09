@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import PWSDK from 'pw-app-sdk';
+import Copper from 'copper-sdk';
 import store from './core/store';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 import './core/jsconsole.css';
 
 const rootEl = document.getElementById('root');
-const sdk = PWSDK.init();
+const sdk = Copper.init();
 sdk.setAppUI({height: 600});
 sdk.on('addButtonClicked', () => {
   sdk.showModal({
